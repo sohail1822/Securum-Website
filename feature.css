@@ -1,0 +1,138 @@
+/* GALLERY ADVERTISMENT SECTION  REALTED CSS  */
+
+
+#adv-gal{
+    margin-top: 5rem;
+}
+.adv-sub-heading{
+    text-align: center;
+    color: #BE252D;
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.adv-heading{
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.adv-gal-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 240);
+}
+.adv-gal-wrapper img {
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    width: 390px;
+    height: 80px;
+}
+.adv-gal-wrapper img::before {
+    background-color: rgb(236, 236, 240);
+}
+@media only screen and (max-width:780px){
+    .adv-heading{
+        font-size: 2rem;
+    }
+    .adv-gal-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,auto)
+    }
+    .adv-gal-wrapper img {
+        margin-left: 2rem;
+        margin-bottom: 5rem;
+        width: 80px;
+        height: 40px;
+    }
+    .ques-container-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .ques-container-item{
+        width: 90%;
+        margin-left: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .ques-item-desc{
+        font-size: 1.6rem;
+    }
+    .ques-container-heading{
+        font-size: 3.4rem;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:1024px){
+    .adv-sub-heading{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .adv-heading{
+        font-size: 2.6rem;
+        margin-bottom: 4rem;
+    }
+    .adv-gal-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,auto)
+    }
+    .adv-gal-wrapper img {
+        margin-left: 4rem;
+        margin-bottom: 5rem;
+        width: 220px;
+        height: 60px;
+    }
+    .ques-container-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .ques-container-item{
+        width: 90%;
+        margin-left: 3.4rem;
+        margin-bottom: 4rem;
+    }
+}
+/* GALLERY ADVERTISMENT SECTION  REALTED CSS ENDED */
+
+
+
+
+
+
+
+/* QUESTION SECTION RELATED CSS  */
+#question{
+    background-color: rgba(216, 230, 252, 0.5);
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+.ques-container-heading{
+    margin-top: 3.5rem;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3.8rem;
+    margin-bottom: 4rem;
+    font-weight: bolder;
+}
+.ques-container-wrapper{
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.ques-item-heading{
+    margin-top: 4.5rem;
+    font-size: 2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin-bottom: 2.5rem;
+}
+.ques-container-item{
+    margin: 0 4rem;
+    height: auto;
+    height: 100%;
+    width: 400px;
+    padding: 2rem 4rem;
+    background-color: #f7e9e9;
+}
+.ques-item-desc{
+    font-size: 2rem;
+}
+/* QUESTION SECTION RELATED CSS  ENDED */

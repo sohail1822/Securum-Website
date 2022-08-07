@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+
+
+/* PLANS & MORE SECTION RELATED CSS  */
+#our-plan{
+    margin-top: 5rem;
+    background: url("img/planbg2.jfif");
+}
+#our-plan::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("img/planbg2.jfif");
+  z-index: -1;
+}
+.plan-container-heading{
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    font-size: 3.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px grey;
+    
+}
+.our-plan-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem ;
+}
+.our-plan-item{
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    width: 380px;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.our-plan-item:hover {
+   transition-timing-function: ease-in;
+}
+.our-plan-heading{
+    background-color: #38ACD2;
+}
+.plan-heading{
+    font-size: 3rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    color: whitesmoke;
+}
+.our-plan-colour-change{
+    background-color: #33548E;
+}
+.our-plan-desc{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    padding:1rem 3rem ;
+}
+.our-plan-desc-2{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0rem;
+    color: #041c2c;
+}
+.our-plan-price span {
+    font-size: 1.5rem;
+}
+.our-plan-price{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1.2rem;
+    color: #041c2c;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+}
+.our-plan-desc-3{
+    color: #33548E;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.our-plan-desc-4{
+    color: #BE252D;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+}
+@media only screen and (max-width:780px){
+    .our-plan-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:5rem ;
+    }
+    .our-plan-item{
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+        width: 90%;
+        height: 120%;
+        background-color: whitesmoke;
+    }
+    .our-plan-wrapper-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .cmp-btn{
+        margin-left: 6rem;
+        margin-bottom: 2rem;
+    }
+    .hack-btn{
+        margin-left: 8rem;
+        margin-bottom: 4rem;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:1024px) {
+    .our-plan-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-plan-item{
+        width: 90%;
+    }
+    .our-plan-heading{
+        font-size: 4.5rem;
+    }
+    .our-plan-desc{
+        font-size: 2.8rem;
+    }
+    .our-plan-desc-2{
+        font-size: 3rem;
+    }
+    .our-plan-item-3{
+        margin-left: 18rem;
+    }
+    .cmp-btn{
+        margin-left: 20rem;
+    }
+}
+/* PLANS & MORE SECTION RELATED CSS ENDED */

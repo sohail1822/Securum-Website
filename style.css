@@ -1,0 +1,1064 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(236, 236, 240);
+}
+section{
+    margin-top: 2rem;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+hr{
+    margin-top: 20px;
+}
+h1,h2,h3,h4{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+/* BUTTON RELATED CSS  */
+.demo-btn{
+    background-color: rgb(243, 178, 243);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.demo-btn:hover {
+    color: whitesmoke;
+    background-color: rgb(136, 135, 135);
+    border: 2px solid whitesmoke;
+    transition: all 0.5s ease-in;
+}
+.buy-now-btn{
+    color: whitesmoke;
+    background-color: #c11d25;
+    padding: 1.5rem 3.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+}
+.more-info-btn{
+    background-color: whitesmoke;
+    color: black;
+    padding: 1.5rem 3.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    outline: none;
+    border: 2px solid #c11d25;
+    border-radius: 3px;
+    margin-left: 2rem;
+}
+.buy-now-btn:hover {
+    color:black ;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border: 3px solid black;
+    transition: all 0.8s ease-in;
+}
+.more-info-btn:hover {
+    color:whitesmoke ;
+    background-color: black;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: all 0.8s ease-in;
+}
+.cmp-btn{
+    color: whitesmoke;
+    background-color: #38ACD2;
+    padding: 1.5rem 3.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-left: 52rem;
+    margin-bottom: 5rem;
+}
+.hack-btn{
+    background-color: whitesmoke;
+    color: black;
+    padding: 1.5rem 3.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    outline: none;
+    border: 2px solid #38ACD2;
+    border-radius: 3px;
+    margin-left: 2rem;
+}
+.cmp-btn:hover {
+    color:black ;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border: 3px solid black;
+    transition: all 0.8s ease-in;
+}
+.hack-btn:hover {
+    color:whitesmoke ;
+    background-color: black;
+    cursor: pointer;
+    border: 3px solid white;
+    outline: none;
+    transition: all 0.8s ease-in;
+}
+/* BUTTON RELATED CSS ENDED */
+
+
+
+
+
+
+
+
+
+/* NAVBAR REALTED  CSS */
+.subcontainer{
+    display: flex;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.logo-item{
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0 250px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.logo-item li {
+    list-style: none;
+}
+.logo-item li a {
+    text-decoration: none;
+    text-shadow: 4px 4px 4px grey;
+}
+.logo-item li a:hover {
+    color: coral;
+    transition: all 0.5s ease-in-out;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    margin: 0 auto;
+    padding: 2rem;
+}
+.nav-item li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+.nav-item li a {
+    font-size: 2rem;
+    font-family: 'Cinzel Decorative', cursive;
+    color: black;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+.nav-item li a:hover {
+    color: red;
+    transition: all 0.5s ease-in;
+}
+
+@media only screen and (max-width:780px){
+    .subcontainer{
+        flex-direction: column;
+    }
+    .logo-item li a {
+        margin-left: 80px;
+    }
+    .nav-item li {
+        display: flex;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:1024px){
+    .subcontainer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-item li a {
+        margin-left: 200px;
+    }
+    .logo-item{
+        margin-bottom: 20px;
+    }
+    .nav-item{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+    }
+    .nav-item li {
+        display: grid;
+        margin-bottom: 20px;
+    }
+}
+/* NAVBAR REALTED  CSS ENDED */
+
+
+
+
+
+
+
+
+
+/* MAIN SECTION RELATED CSS */
+#main{
+    margin-top: 20rem;
+}
+.main-left{
+    width: 50%;
+}
+.main-right{
+    width: 50%;
+}
+.main-wrapper{
+    display: flex;
+    gap: 10rem;
+}
+.main-left-heading{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: rgb(105, 118, 238);
+    text-shadow: 3px 3px 3px grey;
+}
+.main-left-desc{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: grey;
+}
+.main-right-heading{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color:rgb(219, 105, 105);
+    text-shadow: 3px 3px 3px grey;
+}
+.main-right-desc{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #36187d;
+    letter-spacing: 0.1rem;
+    word-spacing: 1.2rem;
+    font-family: 'Bellota Text', cursive;
+    font-weight: bolder;
+}
+@media only screen and (max-width:780px){
+    #main{
+        padding-top: 0rem;
+    }
+    .main-right {
+        width: auto;
+    }
+    .main-left{
+        width: auto;
+    }
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        margin: 0 auto;
+    }
+    .main-left{
+        margin: 0 auto;
+    }
+    .main-left-heading {
+        font-size: 2.5rem;
+    }
+    .main-left-desc {
+        font-size: 1.8rem;
+    }
+    .main-right{
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .main-right-heading {
+        font-size: 2.5rem;
+    }
+    .main-right-desc {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:1024px){
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        margin: 0 auto;
+    }
+    .main-left{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .main-left-heading{
+        font-size: 5rem;
+    }
+    .main-left-desc{
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    .main-right{
+        width: 100%;
+    }
+    .main-right-heading{
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+    }
+    .main-right-desc{
+        font-size: 2.5rem;
+    }
+
+}
+/* MAIN SECTION REALTED CSS ENDED */
+
+
+
+
+
+
+
+
+
+/* OUR FEATURES SECTION RELATED CSS  */
+#features{
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
+.feature-wrapper{
+    margin: 0 auto;
+}
+.feature-heading{
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #36187d;
+    text-align: center;
+    text-shadow: 3px 3px 3px grey;
+}
+.feature-subheading{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
+.feature-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.item-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5rem;
+    padding: 2rem 5rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(170, 170, 170);
+}
+.item-box-logo ion-icon {
+    width: 80px;
+    height: 80px;
+    color: rgb(31, 171, 218);
+    margin: 0 auto;
+    align-self: center;
+    margin-left: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+.item-box-logo ion-icon:hover {
+    color:black;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.item-box-heading{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.3rem;
+    text-align: center;
+    color: #36187d;
+}
+.item-box-desc{
+    font-size: 1.5rem;
+    font-family: 'Bellota Text', cursive;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    text-align: center;
+}
+@media only screen and (max-width:780px){
+    #features{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .feature-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    .feature-heading {
+        font-size: 3rem;
+    }
+    .feature-subheading {
+        font-size: 2rem;
+    }
+    .item-box{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .item-box-logo ion-icon {
+        width: 60px;
+        height: 60px;
+        margin-left: 8rem;
+    }
+    .item-box-heading {
+        font-size: 2rem;
+    }       
+}
+@media only screen and (min-width:780px) and (max-width:1024px){
+    #features{
+        margin-top: 20rem;
+        margin-bottom: 10rem;
+    }
+    .feature-items{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+    .item-box{
+        margin-bottom: 5rem;
+    }
+    .item-box-logo{
+        margin-left: -40px;
+    }
+}
+/* OUR FEATURES SECTION RELATED CSS ENDED  */
+
+
+
+
+
+
+
+
+
+/* OUR PRODUCTS RELATED CSS  */
+#our-products{
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
+.our-products-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.our-products-element {
+    margin: 0 3rem;
+    padding: 2rem 5rem;
+    border-radius: 20px;
+    width: 40vw;
+    margin-bottom: 4rem;
+    box-shadow: 3px 3px 10px rgb(170, 170, 170);
+}
+.our-products-heading{
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    color: #36187d;
+    text-align: center;
+    text-shadow: 3px 3px 3px grey;
+}
+.our-products-element-heading{
+    font-size: 2.4rem;
+}
+.our-products-element img {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    width: 210px;
+    height: 160px;
+}
+.our-products-element-price{
+    margin-top: 0rem;
+    font-size: 2rem;
+    margin-left: 25rem;
+    align-items: flex-end;
+}
+.our-product-element-sub{
+    display: flex;
+}
+.our-products-element-price-3{
+    margin-left: 35rem;
+}
+.our-products-element-price-4  {
+    margin-left: 35rem;
+}
+@media only screen and (max-width:780px){
+    .our-products-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-products-element {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .our-product-element-sub{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-products-element-price{
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .our-products-element-price-3{
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .our-products-element-price-4  {
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .our-products-element img {
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:1024px){
+    .our-products-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-gap: 4rem;
+    }
+    .our-products-element {
+        width: 100%;
+        margin-left: -10px;
+    }
+    .our-product-element-sub{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-products-element-price{
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .our-products-element-price-3{
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .our-products-element-price-4  {
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .our-products-element img {
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+}
+/* OUR PRODUCTS RELATED CSS ENDED */
+
+
+
+
+
+
+
+
+
+/* OUR TEAM RELATED CSS  */
+#our-team{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.our-team-wrapper{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.our-team-heading{
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    color: #36187d;
+    text-align: center;
+    text-shadow: 3px 3px 3px grey;
+}
+.our-team-element{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 1rem 4rem;
+    box-shadow: 3px 3px 10px rgb(170, 170, 170);
+}
+.our-team-desc{
+    flex: 5;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.our-team-author{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #36187d;
+}
+.our-team-element-img{
+    flex: 3;
+}
+.our-team-next-btn{
+    margin-top: 10px;
+    margin-left: 7rem;
+    flex: 2;
+}
+.our-team-next-btn ion-icon{
+    background-color: rgb(249, 249, 249);
+    border-radius: 50%;
+    padding: 2rem;
+    color: skyblue;
+    border: 2px solid black;
+}
+.our-team-element-img img{
+    margin-left: 4rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+@media only screen and (max-width:780px){
+    .our-team-element {
+        display: flex;
+        width: 120%;
+        margin-left: -20px;
+        flex-direction: column;
+    }
+    .our-team-desc{
+        margin-left: 4rem;
+    }
+    .our-team-next-btn ion-icon {
+        margin-top: 10px;
+        margin-left: 0rem;
+        flex: 1;
+        height: 15px;
+        width: 15px;
+    }
+    .our-team-element-img img{
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+}
+/* OUR TEAM RELATED CSS ENDED */
+
+
+
+
+
+
+
+
+
+
+/* CONTACT US SECTION */
+#contact-us{
+    margin-bottom: 8rem;
+}
+.contact-us-heading{
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    color: #36187d;
+    text-align: center;
+    text-shadow: 3px 3px 3px grey;
+}
+.contact-us-wrapper{
+    display: flex;
+}
+.contact-item{
+    background-color: whitesmoke;
+    margin: 0 6rem;
+    margin-left: 8rem;
+    box-shadow: 3px 3px 10px rgb(170, 170, 170);
+    border-radius: 30px;
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-icon ion-icon{
+    color: rgb(31, 171, 218);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 7rem;
+}
+.item-heading-text{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: #36187d;
+}
+.item-heading-desc{
+    margin-bottom: 1.5rem;
+    font: 2.5rem;
+}
+@media only screen and (max-width:780px){
+    .contact-us-wrapper{
+        flex-direction: column;
+        gap:4rem;
+    }
+    .contact-item{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:1024px){
+    .contact-us-wrapper{
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(2,auto);
+    }
+    .contact-item{
+        margin: 0 2rem;
+        margin-left: -2rem;
+        width: 350px;
+        padding: 0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* READY TO GO SECTION RELATED CSS  */
+#ready-sec {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+.ready-wrapper{
+    margin-left: 8rem;
+    width: 85%;
+    background-color: #f26a21;
+    padding: 3rem 5rem;
+}
+.ready-wrapper-heading{
+    font-size: 5rem;
+    color: whitesmoke;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.ready-wrapper-desc{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: whitesmoke;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+.ready-btn{
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.ready-btn:hover {
+    background-color: black;
+    color: whitesmoke;
+    transition: all 0.8s ease-in ;
+}
+.ready-btn ion-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+ion-icon:hover {
+    transform: scaleX(5deg);
+    transition:  all  0.5s ease-in-out;
+}
+@media only screen and (max-width:780px) {
+    .ready-btn {
+        display: none;
+    }
+    .ready-wrapper{
+        margin-left: 0rem;
+        width: 100%;
+    }
+}
+/* READY TO GO SECTION RELATED CSS  ENDED */
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION RELATED CSS  */
+#footer{
+    background-color: #cec3e9;
+    color: whitesmoke;
+}
+.footer-wrapper{
+    display: flex;
+}
+.footer-left , .footer-middle{
+    flex: 2;
+}
+.footer-right{
+    flex: 6;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    margin-left: 5rem;
+}
+.footer-left-element-1{
+    display: block;
+    font-size: 3.5rem;
+    margin: 0 250px;
+    margin-left: 10px;
+}
+.footer-left-element-2,.footer-left-element-3, li {
+    list-style: none;
+}
+.footer-left-element-1 li a {
+    text-decoration: none;
+    text-shadow: 4px 4px 4px grey;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.footer-left-element-1 li a:hover {
+    color: coral;
+    transition: all 0.5s ease-in-out;
+}
+.footer-left-element-2 , .footer-left-element-3{
+    display: flex;
+}
+.footer-left-element-2 , .footer-left-element-3 , li{
+    margin: 0rem 2rem;
+    margin-bottom: 1.5rem;
+} 
+.footer-left-element-2 , .footer-left-element-3 , ion-icon{
+    margin-top: 1rem;
+    font-size: 3.8rem;
+}
+.footer-left-element-2 li a {   
+    color: black; 
+    font-size: 2rem;
+    text-decoration: none;
+}
+.footer-left-element-3 li a {
+    font-size: 2rem;
+    color: black; 
+    text-decoration: none;
+}
+.footer-left ion-icon{
+    color: black;
+}
+.footer-middle-heading{
+    color: rgb(0, 0, 0);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-shadow: 3px 3px 3px grey;
+}
+.footer-middle-heading:hover {
+    color: red;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.footer-middle-item li {
+    list-style: none;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    font-size: 2.2rem;
+}
+.footer-middle-item li a{
+    text-decoration: none;
+    color: black;
+}
+.footer-middle-item li a:hover {
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+.footer-right-heading{
+    color: rgb(0, 0, 0);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-shadow: 3px 3px 3px grey;
+}
+.footer-right-heading:hover {
+    color: red;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.footer-social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.social-item ion-icon{
+    margin-left: 50px;
+    color: black;
+}
+.social-item ion-icon:hover {
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+.social-item li {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    list-style: none;
+}
+.social-item li a {
+    margin-left: -40px;
+    text-decoration: none;
+    color: black;
+}
+.social-item li a:hover {
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+.footer-wrapper-2{
+    display: flex;
+    margin-top: -2rem;
+}
+.copy-right{
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: black;
+}
+@media only screen and (max-width:780px){
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-left-element-2 ion-icon{
+        margin-left: -40px;
+        font-size: 3rem;
+    }
+    .footer-left-element-3 ion-icon{
+        margin-left: -40px;
+        font-size: 3rem;
+    }
+    .footer-left {
+        margin-bottom: 2rem;
+    }
+    .footer-middle-item{
+        margin-left: -40px;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+    .footer-middle-heading{
+        margin-left: -20px;
+    }
+    .footer-social-link{
+        display: grid;
+        margin-left: -40px;
+        grid-template-columns: repeat(2,auto);
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width:780px) and (max-width:1024px){
+    .footer-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        gap: 4rem;
+    }
+    .footer-wrapper-2{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .footer-middle-heading{
+        margin-left: -280px;
+    }
+    .footer-middle-item{
+        margin-left: -220px;
+    }
+    .footer-right-heading{
+        margin-left: 100px;
+    }
+    .footer-social-link{
+        margin-left: 80px;
+    }
+}
+/* FOOTER SECTION RELATED CSS  ENDED*/
+
+
+
+
+
+
+
+
+
+/* HAMBURGER RELATED CSS  */
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    border-radius: 50%;
+    padding: 1.5rem;
+    border: 3px solid black;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: black;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:780px){
+    .burger{
+        display: block;
+    }
+    #navmenu{
+        /* display: none; */
+    }
+}
