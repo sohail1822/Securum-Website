@@ -118,6 +118,24 @@
     display: flex;
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
+.ques-container-item{
+    margin-left: 150px;
+
+}
+@media only screen and (max-width:768px){
+    .ques-container-wrapper{
+    margin-left: 10vw;
+    font-size: 0.8rem;
+}
+.ques-item-desc{
+    font-size: 0.8rem;
+}
+}
+.ques-container-wrapper {
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin-left: -40px;
+}
 .ques-item-heading{
     margin-top: 4.5rem;
     font-size: 2rem;

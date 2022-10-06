@@ -8,16 +8,22 @@ AOS.init({
     anchorplacement :"top-bottom"
 });
 
+const navIconEl = document.querySelector(".nav_icon")
+const navCloseEl = document.querySelector(".nav_icon_2")
+const navList = document.querySelector(".nav-item")
+const navbgOverLay = document.querySelector(".nav_bg_overlay")
 
-// const hamburgerMenu = document.querySelector(" #navmenu  .navbar")
-// const closeNavButton = document.querySelector("#navmenu  .navbar")
+const navOpen = () => {
+    navList.classList.add('show')
+    navbgOverLay.classList.add('active')
+    document.body.style = ' visibility:visible; height:100vh ; width:100vw ; overflow:hidden;'
+}
 
-
-// hamburgerMenu.addEventListener("click", ()=>{
-//     closeNavButton.classList.add("show")
-//     document.body.style.overflow = 'hidden'
-// })
-// closeNavButton.addEventListener("click" , ()=>{
-//     closeNavButton.classList.remove("show")
-//     document.body.style.overflow = 'initial'
-// })
+const navClose = () => {
+    navList.classList.remove('show');
+    navbgOverLay.classList.remove("active");
+    document.body.style = 'visibility:visible ; height :initial ; width:100% ; ';
+}
+navIconEl.addEventListener('click', navOpen);
+navCloseEl.addEventListener('click', navClose);
+navbgOverLay.addEventListener('click', navClose);
